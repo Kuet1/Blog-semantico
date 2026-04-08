@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blog - contato</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- div com propósito de estilização no css-->
+            <div id="navbar-inner">
+                <h2>Blog</h2>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="contact.html">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container form-container">
+        <main class="form">
+            <h1>Envie uma mensagem</h1>
+            <form action="#" class="contact-form">
+                <div class="contact-container">
+                    <div class="name-container">
+                        <label for="name">Nome<span class="required">*</span></label>
+                        <input type="text" name="name" id="name" required placeholder="Informe seu nome">
+                    </div>
+                    <div class="email-container">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="Informe seu e-mail">
+                    </div>
+                </div>
+                <div class="reason-container">
+                    <label for="message-reason">Motivo <span class="required">*</span></label>
+                    <select name="message-reason" id="message-reason">
+                        <option
+                        value="sugestoes">Sugestões</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="envio-posts">Envio de posts</option>
+                        <option value="Outros" selected>Outros</option>
+                    </select>
+                </div>
+                <div class="message-container">
+                    <label for="message">Mensagem: <span class="required">*</span></label>
+                    <textarea name="message" id="message" placeholder="Nos envie sua mensagem!"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="submit-btn">
+            </form>
+        </main>
+    </div>
+    <footer id="footer">
+        <h2>Blog</h2>
+        <p>Os melhores registros de aventuras</p>
+        <p>2026 &copy; Kauet Dias</p>
+    </footer>
+</body>
+</html>
